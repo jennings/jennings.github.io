@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <id>urn:uuid:4ab33cd9-9d78-4ed1-9ebc-2b140932c4b4</id>
+    <title>Stephen Jennings' Blog</title>
+    <link href="http://sgjennings.com/blog/feed.xml" rel="self"/>
+    <link href="http://sgjennings.com/"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <author>
+        <name>Stephen Jennings</name>
+        <uri>http://sgjennings.com/</uri>
+    </author>
+
+    {% for post in site.posts limit:10 %}
+    <entry>
+        <id>http://sgjennings.com{{ post.id }}</id>
+        <link href="http://sgjennings.com{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <title>{{ post.title | xml_escape }}</title>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+
+</feed>

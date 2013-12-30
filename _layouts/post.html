@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article>
+
+    <h1><a class="no-decorate" href="{{ page.url }}">{{ page.title }}</a></h1>
+
+    {{ content }}
+
+    <div class="article-footer">
+        Posted {{ page.date | date: "%A, %B %d, %Y" }}
+    </div>
+
+    <div style="margin-top: 1em;">
+        <fb:comments href="http://sgjennings.com{{ page.url }}" num_posts="3" width="600"></fb:comments>
+    </div>
+
+</article>

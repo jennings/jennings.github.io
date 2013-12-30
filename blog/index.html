@@ -1,0 +1,19 @@
+---
+layout: default
+title: Thoughts
+---
+    {% for post in site.posts %}
+
+        {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+        {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+
+        {% if month != nmonth %}
+            {% unless forloop.first %}</ul>{% endunless %}
+            <h1>{{ post.date | date: '%B %Y' }}</h1><ul>
+        {% endif %}
+
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+    {% endfor %}
+
+</ul>

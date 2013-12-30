@@ -1,0 +1,3 @@
+permalink: /blog/:year/:month/:title/
+timezone: America/Los_Angeles
+pygments: true

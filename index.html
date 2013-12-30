@@ -1,0 +1,21 @@
+---
+layout: default
+title: Stephen Jennings
+---
+
+{% for post in site.posts limit: 5 %}
+
+<article>
+    <h1><a class="no-decorate" href="{{ post.url }}">{{ post.title }}</a></h1>
+
+    {{ post.content }}
+
+    <div class="article-footer">
+        Posted {{ post.date | date: "%A, %B %d, %Y" }}<br/>
+        <a href="{{ post.url }}">
+            <fb:comments-count href="http://sgjennings.com{{ post.url }}"></fb:comments-count> comments
+        </a>
+    </div>
+</article>
+
+{% endfor %}
