@@ -7,18 +7,18 @@ layout: nil
 
     <id>urn:uuid:4ab33cd9-9d78-4ed1-9ebc-2b140932c4b4</id>
     <title>Stephen Jennings' Blog</title>
-    <link href="http://sgjennings.com/blog/feed.xml" rel="self"/>
-    <link href="http://sgjennings.com/"/>
+    <link href="http://jennings.io/blog/feed.xml" rel="self"/>
+    <link href="http://jennings.io/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <author>
         <name>Stephen Jennings</name>
-        <uri>http://sgjennings.com/</uri>
+        <uri>http://jennings.io/</uri>
     </author>
 
     {% for post in site.posts limit:10 %}
     <entry>
-        <id>http://sgjennings.com{{ post.id }}</id>
-        <link href="http://sgjennings.com{{ post.url }}"/>
+        <id>http://jennings.io{{ post.id }}</id>
+        <link href="http://jennings.io{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <title>{{ post.title | xml_escape }}</title>
         <content type="html">{{ post.content | xml_escape }}</content>
