@@ -8,7 +8,7 @@ layout: default
     <p class="post-meta">
         <i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}
 
-        {% if page.tags %}
+        {% if page.tags.size > 0 %}
             • <i class="fa fa-tags"></i>
             {% for tag in page.tags %}
                 {{ tag }}
