@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Web Security Reference
+title: Web Security Notes
 ---
 
 This is my own reference for any security-related advice I find I must keep in
