@@ -1,6 +1,7 @@
 ---
 title: Improving our builds with Psake and Rake
 layout: post
+tags: ci psake rake
 ---
 
 I believe these are good things:

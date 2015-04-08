@@ -1,0 +1,114 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 36pt;
+}
+
+#sidebar {
+    background: $sidebar-background;
+    color: $sidebar-text-color;
+
+    h1 {
+        font-size: 20pt;
+        text-align: center;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &-description{
+        color: darken($sidebar-text-color, 50%);
+    }
+
+    &-links {
+        a {
+            color: $sidebar-text-color;
+        }
+    }
+}
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+    &:visited {
+        color: darken($accent-color, 10%);
+    }
+    &:hover, &:active {
+        text-decoration: underline;
+        color: $accent-color;
+    }
+}
+
+a.no-decorate {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+a.social-icon {
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 30px;
+    width: 30px;
+    color: $sidebar-text-color;
+    @include transition(all 0.5s ease);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a.social-icon.twitter {
+    background-color: darken($twitter-color, 15%);
+    color: $sidebar-text-color;
+    &:hover {
+        background-color: $twitter-color;
+        color: $sidebar-text-color;
+    }
+}
+
+a.social-icon.github {
+    background-color: darken($github-color, 30%);
+    &:hover {
+        background-color: $github-color;
+        color: darken($sidebar-text-color, 70%);
+    }
+}
+
+a.social-icon.rss {
+    background-color: darken($rss-color, 15%);
+    &:hover {
+        background-color: $rss-color;
+        color: $sidebar-text-color;
+    }
+}
+
+pre {
+    padding: 0.5em;
+    background-color: darken($background-color, 6%);
+    border: solid 1px darken($background-color, 10%);
+    overflow: auto;
+}
+
+.post-meta {
+    color: lighten($text-color, 50%);
+}
+
+#footer {
+    font-size: 75%;
+    color: lighten($text-color, 50%);
+}
+
+a.tag {
+    color: inherit;
+}

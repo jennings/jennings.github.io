@@ -1,6 +1,9 @@
 ---
 title: Repositories Aren't So Bad
 layout: post
+tags:
+- entityframework
+- patterns
 ---
 
 Rob Conery has apparently been messing with .NET data access methods and

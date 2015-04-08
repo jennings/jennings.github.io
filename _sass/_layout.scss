@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+}
+
+@media (min-width: $on-device + 1px) {
+    body {
+        flex-direction: row;
+    }
+    #sidebar {
+        @include flex(1 0);
+        min-width: $sidebar-width;
+    }
+    #main {
+        @include flex(4 1);
+    }
+}
+
+@media (max-width: $on-device) {
+    body {
+        flex-direction: column;
+    }
+    #sidebar {
+        @include flex(50%);
+        text-align: center;
+    }
+    #main {
+    }
+}
+
+#sidebar {
+    padding: 0.5em;
+
+    &-links {
+        text-align: center;
+    }
+}
+
+#gravatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-image: url('http://www.gravatar.com/avatar/9f17df847cd69055fdbe0e3cc98423b8?s=120');
+}
+
+#social-icons {
+    margin: 0.75em auto;
+    text-align: center;
+
+    .social-icon {
+        display: inline-block;
+        margin: 0 4px;
+        text-align: center;
+    }
+}
+
+#main {
+    padding: 1em;
+    &-content {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+#footer {
+    margin: 2em auto 1em;
+    text-align: center;
+}
+
+footer {
+    @include flexbox();
+    width: 100%;
+}
+
+#post-previous {
+    @include flex(1 0);
+    text-align: left;
+}
+
+#post-next {
+    @include flex(1 0);
+    text-align: right;
+}
+
+pre {
+    margin-left: 1em;
+    margin-right: 1em;
+}

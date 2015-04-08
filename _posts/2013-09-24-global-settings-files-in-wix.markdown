@@ -2,6 +2,8 @@
 layout: post
 title: Global settings files in WiX
 date: 2013-09-24 20:55:00 -700
+tags:
+- wix
 ---
 
 Global settings files have several requirements:
