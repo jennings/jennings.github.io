@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-        <title>{{ page.title }}</title>
-        <link rel="alternate" type="application/atom+xml" href="/blog/feed.xml" title="Blog (Atom)" />
-        <style type="text/css">
-            @import url('/styles/default.css');
-        </style>
-        <script src="/scripts/modernizr.custom.js"></script>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body>
 
-        <div id="header">
-            <div id="header-title">
-                <a href="/" class="no-decorate">Stephen Jennings</a>
+        <nav id="sidebar">
+            <div id="gravatar"></div>
+            <h1><a href="/">{{ site.title }}</a></h1>
+            <div id="sidebar-description">
+                <p>
+                    {{ site.description }}
+                </p>
             </div>
-            <div id="header-subtitle">
-                Something insightful or witty goes here
+            <div id="sidebar-links">
+                <a href="/">Blog</a>
+                • <a href="/scotch/">Scotch</a>
+                • <a href="/about/">About Me</a>
             </div>
-        </div>
-
-        <nav id="topnav">
-            <ul>
-                <li><a href="/blog/">Thoughts</a></li>
-                <li><a href="/about/">About Me</a></li>
-                <li><a href="/reference/">Reference</a></li>
-            </ul>
+            <div id="social-icons">
+                <a class="social-icon fa fa-twitter twitter" href="https://twitter.com/{{site.twitter_username}}" title="@{{site.twitter_username}}"></a>
+                <a class="social-icon fa fa-github github" href="https://github.com/{{site.github_username}}" title="github.com/{{site.github_username}}"></a>
+                <a class="social-icon fa fa-rss rss" href="/feed.xml" title="Feed"></a>
+            </div>
         </nav>
 
-        <div id="content">
-
-            {{ content }}
-
-        </div>
-
-        <div style="clear: both;"></div>
-
-        <div id="footer">
-            <div>
-                Copyright 2012 Stephen Jennings
-            </div>
-            <div>
-                This text is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>
+        <div id="main">
+            <div id="main-content">
+                {{ content }}
+                <div id="footer">
+                    These words are licensed to you under a
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                        Creative Commons Attribution 4.0 International License
+                    </a>.
+                    <br>
+                    Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>,
+                    for <a href="https://github.com/shashankmehta/greyshade">Greyshade</a>
+                </div>
             </div>
         </div>
+
     </body>
 </html>

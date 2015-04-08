@@ -1,3 +1,10 @@
+title: Stephen Jennings
+url: "http://jennings.io" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+description: >
+  Yet another blog from someone you've never heard of.
+twitter_username: sgjennings
+github_username:  jennings
+
 permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles
-pygments: true
