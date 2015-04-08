@@ -8,11 +8,11 @@ layout: default
     <p class="post-meta">
         <i class="fa fa-calendar"></i> {{ page.date | date: "%b %-d, %Y" }}
 
-        {% if post.tags %}
+        {% if page.tags %}
             • <i class="fa fa-tags"></i>
-            {{ for tag in post.tags }}
+            {% for tag in page.tags %}
                 {{ tag }}
-            {{ endfor }}
+            {% endfor %}
         {% endif %}
 
         {% if page.meta %}
