@@ -12,6 +12,10 @@ h1 {
     font-size: 36pt;
 }
 
+strong {
+    font-weight: 600;
+}
+
 #sidebar {
     background: $sidebar-background;
     color: $sidebar-text-color;
