@@ -71,6 +71,10 @@ a.social-icon {
     }
 }
 
+a.social-icon {
+    text-decoration: none;
+}
+
 a.social-icon.twitter {
     background-color: darken($twitter-color, 15%);
     color: $sidebar-text-color;
