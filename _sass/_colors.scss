@@ -42,7 +42,6 @@ strong {
 
 a {
     color: $accent-color;
-    text-decoration: none;
     &:visited {
         color: darken($accent-color, 10%);
     }
