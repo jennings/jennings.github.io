@@ -8,5 +8,5 @@ github_username:  jennings
 
 permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
