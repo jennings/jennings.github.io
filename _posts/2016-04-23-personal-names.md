@@ -27,7 +27,6 @@ The gist is that, if you've written this code:
 
 ```c#
 Console.WriteLine($"Hello {firstName} {lastName}!");
-print( "Hello " + firstName + " " + lastName + "!" )
 ```
 
 then you might have called some people by the wrong name. If you can, it could
