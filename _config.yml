@@ -10,3 +10,5 @@ permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles
 markdown: kramdown
 highlighter: rouge
+exclude:
+  - Gulpfile.js

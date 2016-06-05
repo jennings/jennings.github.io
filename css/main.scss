@@ -3,24 +3,23 @@
 
 @charset "utf-8";
 
-$base-font-family:  'Open Sans', Helvetica, Arial, sans-serif;
-$base-font-size:    16px;
-$small-font-size:   $base-font-size * 0.875;
-$base-line-height:  1.5;
+$base-font-family:      'Open Sans', Helvetica, Arial, sans-serif;
+$base-font-size:        16px;
+$base-font-weight:      300;
+$small-font-size:       $base-font-size * 0.875;
+$base-line-height:      1.4;
 
-$text-color:        #111;
-$background-color:  #fff;
+$heading-font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+$text-color:            #111;
+$background-color:      #f9f9f9;
 
 $accent-color:          #33f;
 
 $sidebar-width:         250px;
-$sidebar-text-color:    #f6f6f6;
-$sidebar-background:    #333333;
 $twitter-color:         #4099ff;
-$github-color:          #ddd;
+$github-color:          #000;
 $rss-color:             #f90;
-
-$on-device:         500px;
 
 
 @mixin media-query($device) {
@@ -56,5 +55,6 @@ $on-device:         500px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "layout",
-        "colors"
+        "colors",
+        "post"
 ;

@@ -1,27 +1,33 @@
 html, body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    background-color: $background-color;
+    color: $text-color;
 }
 
 h1, h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-family: $heading-font-family;
+    font-weight: $base-font-weight * 2.0;
+    line-height: (1.0 + $base-line-height) / 2.0;
 }
 
 h1 {
-    font-size: 36pt;
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 125%;
 }
 
 strong {
-    font-weight: 600;
+    font-weight: $base-font-weight * 2.0;
 }
 
 #sidebar {
-    background: $sidebar-background;
-    color: $sidebar-text-color;
-
     h1 {
-        font-size: 20pt;
+        font-size: 125%;
         text-align: center;
         a {
             color: inherit;
@@ -30,12 +36,12 @@ strong {
     }
 
     &-description{
-        color: darken($sidebar-text-color, 50%);
+        color: darken($text-color, 50%);
     }
 
     &-links {
         a {
-            color: $sidebar-text-color;
+            color: $text-color;
         }
     }
 }
@@ -64,8 +70,8 @@ a.social-icon {
     border-radius: 50%;
     line-height: 30px;
     width: 30px;
-    color: $sidebar-text-color;
-    @include transition(all 0.5s ease);
+    color: $text-color;
+    @include transition(all 0.25s ease);
     &:hover {
         text-decoration: none;
     }
@@ -76,39 +82,37 @@ a.social-icon {
 }
 
 a.social-icon.twitter {
-    background-color: darken($twitter-color, 15%);
-    color: $sidebar-text-color;
+    color: $twitter-color;
     &:hover {
         background-color: $twitter-color;
-        color: $sidebar-text-color;
+        color: $background-color;
     }
 }
 
 a.social-icon.github {
-    background-color: darken($github-color, 30%);
+    color: $github-color;
     &:hover {
         background-color: $github-color;
-        color: darken($sidebar-text-color, 70%);
+        color: $background-color;
     }
 }
 
 a.social-icon.rss {
-    background-color: darken($rss-color, 15%);
+    color: $rss-color;
     &:hover {
         background-color: $rss-color;
-        color: $sidebar-text-color;
+        color: $background-color;
     }
 }
 
-pre {
-    padding: 0.5em;
-    background-color: darken($background-color, 6%);
+blockquote {
+    background-color: lighten($background-color, 25%);
     border: solid 1px darken($background-color, 10%);
-    overflow: auto;
 }
 
-.post-meta {
-    color: lighten($text-color, 50%);
+pre {
+    background-color: lighten($background-color, 25%);
+    border: solid 1px darken($background-color, 10%);
 }
 
 #footer {

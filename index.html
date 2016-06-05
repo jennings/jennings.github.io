@@ -5,14 +5,14 @@ title: Stephen Jennings
 
 {% for post in site.posts limit: 5 %}
 
-<article>
+<div class="post">
     <h1><a class="no-decorate" href="{{ post.url }}">{{ post.title }}</a></h1>
 
     {{ post.content }}
 
-    <div class="article-footer">
+    <div class="post-meta">
         Posted {{ post.date | date: "%A, %B %d, %Y" }}<br/>
     </div>
-</article>
+</div>
 
 {% endfor %}
