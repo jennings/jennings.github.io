@@ -1,0 +1,26 @@
+.post {
+    margin-bottom: 5em;
+}
+
+.post-header {
+}
+
+.post-footer {
+    @include flexbox();
+    width: 100%;
+}
+
+.post-meta {
+    color: lighten($text-color, 30%);
+    font-size: 90%;
+}
+
+#post-previous {
+    @include flex(1 0);
+    text-align: left;
+}
+
+#post-next {
+    @include flex(1 0);
+    text-align: right;
+}

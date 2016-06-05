@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>{{ page.title  }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/main.css">
@@ -14,11 +14,6 @@
         <nav id="sidebar">
             <div id="gravatar"></div>
             <h1><a href="/">{{ site.title }}</a></h1>
-            <div id="sidebar-description">
-                <p>
-                    {{ site.description }}
-                </p>
-            </div>
             <div id="sidebar-links">
                 <a href="/blog/">Blog</a>
                 • <a href="/notes/">Notes</a>
@@ -31,18 +26,14 @@
         </nav>
 
         <div id="main">
-            <div id="main-content">
-                {{ content }}
-                <div id="footer">
-                    These words are licensed to you under a
-                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-                        Creative Commons Attribution 4.0 International License
-                    </a>.
-                    <br>
-                    Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>,
-                    for <a href="https://github.com/shashankmehta/greyshade">Greyshade</a>
-                </div>
-            </div>
+            {{ content }}
+        </div>
+
+        <div id="footer">
+            Should you want them, hese words are licensed to you under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+                CC-BY 4.0 License
+            </a>.
         </div>
 
         <script src="/js/google.js"></script>
