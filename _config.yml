@@ -5,6 +5,7 @@ description: >
   Yet another blog from someone you've never heard of.
 twitter_username: sgjennings
 github_username:  jennings
+github_repo_url: https://github.com/jennings/jennings.github.io
 
 permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles

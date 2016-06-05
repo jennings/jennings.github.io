@@ -19,6 +19,10 @@ layout: default
         {% if page.meta %}
             • {{ page.meta }}
         {% endif %}
+
+        • <a class="no-decorate" title="Edit this page on GitHub" href="{{ site.github_repo_url }}/blob/master/{{ page.path }}">
+            <i class="fa fa-pencil"></i> Edit
+        </a>
     </p>
   </div>
 
