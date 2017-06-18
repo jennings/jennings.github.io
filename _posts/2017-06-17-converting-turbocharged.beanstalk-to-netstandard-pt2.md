@@ -4,10 +4,20 @@ layout: post
 date: 2017-06-17T18:30:00-0700
 ---
 
+This is part 2 of a series about converting [Turbocharged.Beanstalk][tb] to
+.NET Standard so it can run on .NET Framework, .NET Core, and Mono.
+
+* Part 1: [Converting the project files and getting the main project to build][pt1]
+* Part 2 (this post): Getting the test project to build
+* Part 3: [Fixing the AppVeyor build][pt3]
+
+[tb]: https://github.com/jennings/Turbocharged.Beanstalk
+[pt1]: {% post_url 2017-06-17-converting-turbocharged.beanstalk-to-netstandard-pt1 %}
+[pt3]: {% post_url 2017-06-17-converting-turbocharged.beanstalk-to-netstandard-pt3 %}
+
 At the end of [part 1][pt1], I had just created [this commit][1d5009c].
 Time to try to get the unit tests working.
 
-[pt1]: {% post_url 2017-06-17-converting-turbocharged.beanstalk-to-netstandard-pt1 %}
 [1d5009c]: https://github.com/jennings/Turbocharged.Beanstalk/commit/1d5009ca5a2edd32ab4770c038ac46772c754efe
 
 

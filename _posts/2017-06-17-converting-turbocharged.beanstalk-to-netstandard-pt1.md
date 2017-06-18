@@ -22,7 +22,13 @@ my projects to .NET Standard.
 This series documents the process I followed to convert
 [Turbocharged.Beanstalk][tb] to .NET Standard.
 
+* Part 1 (this post): Converting the project files and getting the main project to build
+* Part 2: [Getting the test project to build][pt2]
+* Part 3: [Fixing the AppVeyor build][pt3]
+
 [tb]: https://github.com/jennings/Turbocharged.Beanstalk
+[pt2]: {% post_url 2017-06-17-converting-turbocharged.beanstalk-to-netstandard-pt2 %}
+[pt3]: {% post_url 2017-06-17-converting-turbocharged.beanstalk-to-netstandard-pt3 %}
 
 
 ## Installing the tooling
