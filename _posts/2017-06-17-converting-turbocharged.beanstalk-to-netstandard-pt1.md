@@ -96,9 +96,9 @@ What does this project look like?
 9 directories, 4 files
 ```
 
-Okay, so we've got one solution file with three csproj files.
+Okay, so I've got one solution file with three csproj files.
 
-That SampleApp is a WinForms project, so we're probably not going to be able to
+That SampleApp is a WinForms project, so I're probably not going to be able to
 convert it. I'll ignore it for now.
 
 ```
@@ -214,7 +214,7 @@ No, of course not.
 
 Most of these errors are from `Properties/AssemblyInfo.cs`. The new build
 system automatically generates properties that used to be specified in that
-file, so we don't even need it anymore.
+file, so I don't even need it anymore.
 
 ```
 src/Turbocharged.Beanstalk❯ rm Properties/AssemblyInfo.cs
