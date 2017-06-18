@@ -3,23 +3,33 @@
 
 @charset "utf-8";
 
-$base-font-family:      'Open Sans', Helvetica, Arial, sans-serif;
-$base-font-size:        20px;
-$base-font-weight:      300;
-$small-font-size:       $base-font-size * 0.875;
-$base-line-height:      1.4;
-
-$heading-font-family:  'Open Sans', Helvetica, Arial, sans-serif;
-
 $text-color:            #111;
 $background-color:      #f9f9f9;
 
 $accent-color:          #33f;
 
+$content-width:         850px;
 $sidebar-width:         250px;
 $twitter-color:         #4099ff;
 $github-color:          #000;
 $rss-color:             #f90;
+$justification:         left;
+
+$base-font-family:      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-size:        16px;
+$base-font-weight:      300;
+$base-line-height:      24px;
+
+$code-font-family:      SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+$code-font-size:        13px;
+$code-background-color: darken($background-color, 1.5%);
+
+$small-font-size:       $base-font-size * 0.875;
+
+$heading-font-family:   $base-font-family;
+$heading-font-size:     32px;
+$heading-line-height:   40px;
+$heading-font-weight:   bold;
 
 
 @mixin media-query($device) {
@@ -54,6 +64,7 @@ $rss-color:             #f90;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "highlight",
         "layout",
         "colors",
         "post"
