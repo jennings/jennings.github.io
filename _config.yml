@@ -1,5 +1,5 @@
 title: Stephen Jennings
-url: "http://jennings.io" # the base hostname & protocol for your site
+url: "https://jennings.io" # the base hostname & protocol for your site
 baseurl: "/" # the subpath of your site, e.g. /blog/
 description: >
   Yet another blog from someone you've never heard of.
