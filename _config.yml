@@ -11,5 +11,7 @@ permalink: /blog/:year/:month/:title/
 timezone: America/Los_Angeles
 markdown: kramdown
 highlighter: rouge
+include:
+  - ".well-known"
 exclude:
   - Gulpfile.js
