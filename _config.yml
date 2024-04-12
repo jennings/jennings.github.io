@@ -15,3 +15,10 @@ include:
   - ".well-known"
 exclude:
   - Gulpfile.js
+
+safe: true
+plugins:
+  - jekyll-asciidoc
+
+whitelist:
+  - jekyll-asciidoc
